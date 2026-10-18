@@ -179,7 +179,7 @@ def _model_json(prompt: str) -> dict[str, Any]:
         raise RuntimeError("Gemini unavailable")
 
     client = genai.Client(api_key=api_key)
-    response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+    response = client.models.generate_content(model="gemini-3.5-flash-lite", contents=prompt)
     text = getattr(response, "text", "") or ""
     if not text and getattr(response, "candidates", None):
         parts = response.candidates[0].content.parts
