@@ -1,0 +1,8 @@
+streamlit>=1.37.0
+pandas>=2.2.2
+plotly>=5.23.0
+python-dotenv>=1.0.1
+requests>=2.32.3
+google-genai>=0.3.0
+mysql-connector-python>=9.0.0
+numpy>=1.26.4
